@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Lato, serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    box-sizing: border-box;
+    word-break: break-word;
+    font-optical-sizing: auto;
+
+}
+
+nav{
+    animation: fadeIn 5s;
+    height: 5vh;
+    background:#3b4658 ;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+
+}
+.nav-links li a {
+    animation: fadeIn 10s;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.projects-headline, .contact-headline{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+/*align-items: center;*/
+    opacity: 0.7;
+}
+
+.about-headline {
+    height: 100vh;
+    background-image: url("../../img/parallax/helloworld4k.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: scroll;
+
+}
+
+.projects-headline {
+    min-height: 50vh;
+    background-image: url("../../img/parallax/citylights.jpg");
+
+
+}
+
+.contact-headline {
+    min-height: 50vh;
+    background-image: url("../../img/parallax/mountains.jpg");
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%,-50%);
+        z-index: 2;
+    }
+
+    .nav-links {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        background: #3b4658;
+        clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+
+    }
+
+    .nav-links.open {
+        clip-path: circle(1300px at 90% -10%);
+        pointer-events: all;
+
+    }
+    .start{
+        flex-direction: column;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links li a {
+        font-size: 25px;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    li.fade{
+        opacity: 1;
+    }
+
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+.content-text{
+    color: #000000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.content-text .border{
+    background-color: #3b4658;
+    color: #000000;
+    padding:20px;
+
+}
+
+.aboutMe {
+
+    background-color: #3b4658;
+}
+
+
+.projects {
+
+    background-color: #3b4658;
+}
+
+#projekt1 {
+    float: left;
+    width: 33vw;
+
+    border: 1px solid #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#projekt2 {
+    float: left;
+    width: 33vw;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#projekt3 {
+    width: 33vw;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.impressum {
+    height: 50vh;
+    align-content: center;
+    background-color: #3b4658;
+}
