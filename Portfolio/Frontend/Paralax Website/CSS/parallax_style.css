@@ -64,7 +64,7 @@ nav{
 
 .about-headline {
     height: 100vh;
-    background-image: url("../../img/parallax/helloworld4k.jpg");
+    background-image: url("../img/helloworld4k.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -76,14 +76,14 @@ nav{
 
 .projects-headline {
     min-height: 50vh;
-    background-image: url("../../img/parallax/citylights.jpg");
+    background-image: url("../img/citylights.jpg");
 
 
 }
 
 .contact-headline {
     min-height: 50vh;
-    background-image: url("../../img/parallax/mountains.jpg");
+    background-image: url("../img/mountains.jpg");
 
 }
 
