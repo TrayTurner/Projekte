@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="landing_script.js" async></script>
+    <title>Contact Me</title>
+</head>
+<body>
+
+    <section class="banner" id="contact" >
+        <header>
+            <a href="#" input type="button" onclick="history.back()" class="logo">Turner Media</a>
+        </header>
+        <div class="container">
+            <form id="contact-form" method="get" action="">
+
+                <div class="form-group">
+                    <label for="yourName">Your Name</label>
+                    <input type="text" id="yourName" name="yourName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="emailName">E-Mail</label>
+                    <input type="email" id="emailName" name="emailName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea name="Message" id="contactMessage" cols="30" rows="10" required></textarea>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!--<div id="status" class="success">Message Send</div>
+        <div id="status" class="error">Message not Send</div>-->
+    </section>
+</section>
+</body>
+</html>
